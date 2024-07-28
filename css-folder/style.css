@@ -1,87 +1,149 @@
-.roboto-regular { 
-      font-family: "Roboto", sans-serif;   
-      font-weight: 400;   
-      font-style: normal; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-    font-family:"Roboto", sans-serif;
-    font-size: small;
-    font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: 400;
 }
 h3{
-    font-size: 18px;
+  font-size: 18px;
 }
 h1{
-    color:black;
+  color:black;
+}
+tr {
+    box-shadow: #42515F;
+    width: 1549px;
 }
 #header-logo{
-    display:flex;
+  display:flex;
+  margin-left: 1.5cm;
 }
 header{
-    background-color:white;
+  background-color:white;
 }
-#header-img{
-    padding: 10px 0px 10px 70px;
+#employee-logo, #payroll {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#header-logo {
+    display: flex;
+    align-items: center;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1px; 
+
+}
+
+#employee-logo p, #payroll p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#payroll p {
+    font-weight: bold;
+}
+
+#header-img {
+    margin-left: 3cm;
+    padding: 10px 0px 10px 7px;
+    width: 47px;
+    height: 47px;
 }
 #main-body{
-    background-color: rgb(250, 246, 246);
-    
+  background-color: #bbbaba29;
+  
 }
 #payroll{
-   font-size:medium;
+ font-size:medium;
 
 }
 #employee-logo{
-    text-align: left;
-    font: normal normal bold 22px/25px Montserrat;
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    opacity: 1;
+  text-align: left;
+  font: normal normal bold 22px/25px Montserrat;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
 }
-#adduser{
-    background-color: #82a70c;
-    color:white;
-    margin: 0%;
-    border: 0cm;
-    padding: 10px 25px 10px 25px;
-    border-radius: 5%;
+#add-user{
+  background-color: #82a70c;
+  color:white;
+  margin-right: 4cm;
+  border: 0cm;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  top: 100px;
+  left: 100px;
+  width: 155px;
+  height: 45px;
+}
+#add-user:hover{
+  background-color: #6c8f0a;
 }
 th{
-    background-color: #42515f;
-    color: rgb(250, 246, 246);;
-    flex-direction:column;
-    padding: 15px;
+  background-color: #42515f;
+  color: rgb(250, 246, 246);;
+  flex-direction:column;
+  padding: 15px;
+  height: 30px;
+}
+td:nth-child(2){
+  text-align: left;
+}
+th:nth-child(2){
+  text-align: left;
 }
 td{
-    border-bottom: 1px rgb(250, 246, 246);
-    padding:10px;
-    border:rgb(250, 246, 246) ;
-    background-color: white ;
+  border-bottom: 1px rgb(250, 246, 246);
+  padding:10px;
+  border:rgb(250, 246, 246) ;
+  background-color: white ;
+  height: 30px;
 }
 tr{ 
-    text-align: center;
-    padding: 10px;
-    margin:50px;
-    border-bottom: 2pt solid rgb(250, 246, 246);
+  text-align: center;
+  padding: 10px;
+  margin:50px;
+  border-bottom: 2pt solid rgb(250, 246, 246);
 }
 span{
-    background-color: #e9fea5;
-    border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
+  background-color: #e9fea5;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
 
 }
 #employeetable{
-    padding: 1px 70px 50px 70px;
-    border:rgb(250, 246, 246);
+  padding: 1px 70px 50px 70px;
+  border:rgb(250, 246, 246);
 
 }
 #mainbodyheader{
-    padding: 10px 70px 10px 70px;
-    display:flex;
-    color:#42515F;
-    font-size: 28px;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px 70px 10px 70px;
+  display:flex;
+  color:#42515F;
+  font-size: 28px;
+  justify-content: space-between;
+  align-items: center;
 
+}
+.plus {
+  padding-bottom: 3px;
+  background-color: #82a70c;
+}
+
+table th:first-child{
+  border-radius:4px 0 0 0;
+}
+
+table th:last-child{
+  border-radius:0 4px 0 0;
 }
