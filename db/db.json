@@ -1,20 +1,39 @@
 {
-    "employee":[
+    "employees": [
         {
-        "name":"Ritika ",
-        "age":22
+            "id": 1,
+            "name": "John Doe",
+            "gender": "Male",
+            "deparment": [
+                "IT",
+                "HR"
+            ],
+            "salary": "10000 - 20000",
+            "starDate": "29 Oct 2021"
         },
         {
-            "name":"Ritika ",
-            "age":22
+          "id": 2,
+          "name": "John Doe",
+          "gender": "Male",
+          "deparment": ["IT", "HR"],
+          "salary": "10000 - 20000",
+          "starDate": "29 Oct 2021"
         },
         {
-            "name":"Ritika ",
-            "age":22
+          "id": 3,
+          "name": "John Doe",
+          "gender": "Male",
+          "deparment": ["IT", "HR"],
+          "salary": "10000 - 20000",
+          "starDate": "29 Oct 2021"
         },
         {
-                "name":"Ritika ",
-                "age":22
+          "id": 4,
+          "name": "John Doe",
+          "gender": "Male",
+          "deparment": ["IT", "HR"],
+          "salary": "10000 - 20000",
+          "starDate": "29 Oct 2021"
         }
     ]
 }

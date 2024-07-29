@@ -73,7 +73,7 @@ header{
   text-transform: capitalize;
   opacity: 1;
 }
-#add-user{
+#adduser{
   background-color: #82a70c;
   color:white;
   margin-right: 4cm;
@@ -85,7 +85,7 @@ header{
   width: 155px;
   height: 45px;
 }
-#add-user:hover{
+#adduser:hover{
   background-color: #6c8f0a;
 }
 th{

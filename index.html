@@ -6,21 +6,19 @@
     <title>Employee List</title>
     <link href="/css-folder/style.css" rel="stylesheet" />
     <script src="/js-folder/jqueryjs.js"></script>
-    <script src="/js-folder/javacript.js"></script>
+    <script src="/js-folder/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="preconnect"
-      href="
-https://fonts.googleapis.com"
+      href="https://fonts.googleapis.com"
     />
     <link
       rel="preconnect"
-      href="
-https://fonts.gstatic.com"
+      href="https://fonts.gstatic.com"
       crossorigin
     />
     <link
-      href="
-https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -47,7 +45,7 @@ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,50
                 <img src="./Assest/magnifying-glass-solid.svg" style="width: 20px; " alt="">
             </button>
           <button
-            id="add-user" onclick="window.location.href = 'form.html';"
+            id="adduser" onclick="window.location.href = 'form.html';"
             style="font-weight: bolder; font-size: large; display: flex"
           >
             <span
@@ -96,7 +94,7 @@ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,50
             <td>₹ 10,000</td>
             <td>29 Oct 2019</td>
             <td>
-              <span style="background-color: rgb(255, 255, 255)"
+              <span id="delete" style="background-color: rgb(255, 255, 255)"
                 ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -109,7 +107,7 @@ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,50
                   d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
                 /></svg
             ></span>
-              <span style="background-color: rgb(255, 255, 255)"
+              <span id="edit" style="background-color: rgb(255, 255, 255)"
                 ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -180,7 +178,7 @@ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,50
             <td>₹ 10,000</td>
             <td>29 Oct 2019</td>
             <td>
-                <span style="background-color: rgb(255, 255, 255)"
+                <span id="delete" style="background-color: rgb(255, 255, 255)"
                   ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -193,7 +191,7 @@ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,50
                     d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
                   /></svg
               ></span>
-                <span style="background-color: rgb(255, 255, 255)"
+                <span id="edit" style="background-color: rgb(255, 255, 255)"
                   ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

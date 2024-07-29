@@ -2,23 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link href="./js-folder/index.js"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" media="screen">
     <link href="./css-folder/form-style.css" rel="stylesheet">
     <link rel="stylesheet" href="./css-folder/style.css">
+    <script src="./js-folder/index.js" defer></script>
     <title>Employee_Payroll_form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        input {
-            cursor: inherit;
-        }
-        .a {
-            cursor: pointer;
-        }
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -47,60 +41,66 @@
                             </div>
                             
                             <div>
-                                <input type="text" aria-label="First name" style="border-radius: 3px;border: 1px solid #BDBDBD;width: 34rem;height: 40px;padding: 10px;">
+                                <input type="text" id="userInput name" style="border-radius: 3px;border: 1px solid #BDBDBD;width: 34rem;height: 40px;padding: 10px;">
                             </div>
                             
                         </div>
-                        <div class="profile-image" style="display: flex;gap:1.3cm;padding-bottom: 37px;">
+                        <div class="profile-image" style="display: flex; gap: 1.3cm; padding-bottom: 37px;">
                             <div>
-                                <label for="profile" style="color: #61707f;"><h6 style="font-size: 16px;font-weight: 450;">Profile image</h6></label>
+                                <label for="profile" style="color: #61707f;">
+                                    <h6 style="font-size: 16px; font-weight: 450;">Profile image</h6>
+                                </label>
                             </div>
-                            <div style="display: flex;gap: 42px">
+                            <div style="display: flex; gap: 42px;">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      <img src="./Assest/Ellipse -1.png" alt="1">
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    <input class="form-check-input" type="radio" name="profileImage" id="profileImage1">
+                                    <label class="form-check-label" for="profileImage1">
                                         <img src="./Assest/Ellipse -1.png" alt="1">
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        <img src="./Assest/Ellipse -1.png" alt="1">
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        <img src="./Assest/Ellipse -1.png" alt="1">
-                                    </label>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="gender" style="display: flex;gap: 2.5cm;padding-bottom: 35px;">
-                            <div>
-                                <label for="gender-label" style="color: #61707f;"><h6 style="font-size: 16px;font-weight: 450;">Gender</h6></label>
-                            </div>
-                            <div style="display: flex;gap: 50px;">
+                                </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1" style="color: #61707f;">
-                                      <h6 style="font-size: 16px;font-weight: 450;">Male</h6>
+                                    <input class="form-check-input" type="radio" name="profileImage" id="profileImage2">
+                                    <label class="form-check-label" for="profileImage2">
+                                        <img src="./Assest/Ellipse -1.png" alt="1">
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2" style="color: #61707f;">
-                                      <h6 style="font-size: 16px;font-weight: 450;">Female</h6>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="profileImage" id="profileImage3">
+                                    <label class="form-check-label" for="profileImage3">
+                                        <img src="./Assest/Ellipse -1.png" alt="1">
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="profileImage" id="profileImage4">
+                                    <label class="form-check-label" for="profileImage4">
+                                        <img src="./Assest/Ellipse -1.png" alt="1">
                                     </label>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="gender" style="display: flex; gap: 2.5cm; padding-bottom: 35px;">
+                            <div>
+                                <label for="gender-label" style="color: #61707f;">
+                                    <h6 style="font-size: 16px; font-weight: 450;">Gender</h6>
+                                </label>
+                            </div>
+                            <div style="display: flex; gap: 50px;">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="genderMale">
+                                    <label class="form-check-label" for="genderMale" style="color: #61707f;">
+                                        <h6 style="font-size: 16px; font-weight: 450;">Male</h6>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="genderFemale" checked>
+                                    <label class="form-check-label" for="genderFemale" style="color: #61707f;">
+                                        <h6 style="font-size: 16px; font-weight: 450;">Female</h6>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="deparment" style="display: flex; gap: 69px; padding-bottom: 27px;">
                             <div>
                                 <label for="deparment-type" style="color: #61707f;"><h6 style="font-size: 16px;font-weight: 450;">Deparment</h6></label>
@@ -145,7 +145,7 @@
                             <div>
                                 <div class="dropdown" style="padding-bottom: 3px;">
                                     <button class="btn-none dropdown-toggle custom-align" type="button" data-toggle="dropdown">
-                                        <span class="dropdown-text" style="background-color: #ffff;">Dropdown button</span>
+                                        <span class="dropdown-text" style="background-color: #ffff;">Select Salary</span>
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right">
                                         <a class="dropdown-item" href="#">Action</a>
@@ -194,15 +194,15 @@
                         </div>
                         <div class="bottons" style="display: flex;justify-content: space-between;">
                             <div>
-                                <button class="btn-none custom" type="button">
+                                <button class="btn-none custom" id="cancel" type="button">
                                         Cancel
                                     </button>
                             </div>
                             <div style="gap: 20px;">
-                                <button class="btn-none custom" type="button" onclick="location.href='index.html';" style="margin-right: 8px;">
+                                <button class="custom" id="submit" type="button" style="margin-right: 8px;">
                                         Submit
                                 </button>
-                                <button class="btn-none custom" type="button">
+                                <button class="btn-none custom" id="reset" type="button">
                                         Reset
                                 </button>
                             </div>
