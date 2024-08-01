@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  
   // Dropdown menu for day, month, year and salary
   for (let i = 1; i <= 31; i++) {
     $("#day-dropdown").append(
