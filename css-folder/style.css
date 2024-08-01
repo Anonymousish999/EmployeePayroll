@@ -147,3 +147,10 @@ table th:first-child{
 table th:last-child{
   border-radius:0 4px 0 0;
 }
+#myInput {
+  border: rgb(15, 15, 15);
+  border-radius: 61px;
+  width: 18rem;
+  padding: 12px;
+  background-color: #dbe0e5;
+}
