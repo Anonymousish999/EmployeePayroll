@@ -41,6 +41,20 @@
       "salary": "₹ 50000",
       "startDate": "17 Oct 2022",
       "note": "hiii guys\n"
+    },
+    {
+      "id": 1722533440301,
+      "name": "Ritika negi",
+      "profilePic": "./Assest/Ellipse -4.png",
+      "gender": "Female",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "₹ 60000",
+      "startDate": "14 Aug 2022",
+      "note": "ritika"
     }
   ]
 }
