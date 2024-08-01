@@ -1,3 +1,46 @@
 {
-  "employees": []
+  "employees": [
+    {
+      "id": 1722526774105,
+      "name": "John Doe",
+      "profilePic": "./Assest/Ellipse -1.png",
+      "gender": "Female",
+      "department": [
+        "HR",
+        "Finance"
+      ],
+      "salary": "₹ 80000",
+      "startDate": "17 Oct 2021",
+      "note": "nbsnbc"
+    },
+    {
+      "id": 1722526801228,
+      "name": "Ishu Gupta",
+      "profilePic": "./Assest/Ellipse -1.png",
+      "gender": "Male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "₹ 80000",
+      "startDate": "19 Dec 2021",
+      "note": "jjkf"
+    },
+    {
+      "id": 1722528465183,
+      "name": "Hardik jain",
+      "profilePic": "./Assest/Ellipse -1.png",
+      "gender": "Male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "₹ 50000",
+      "startDate": "17 Oct 2022",
+      "note": "hiii guys\n"
+    }
+  ]
 }
