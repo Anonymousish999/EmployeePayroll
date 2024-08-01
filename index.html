@@ -4,19 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee List</title>
-    <link href="/css-folder/style.css" rel="stylesheet" />
-    <script src="/js-folder/jqueryjs.js"></script>
-    <script src="/js-folder/index.js"></script>
+    <link href="./css-folder/style.css" rel="stylesheet" />
+    <script src="./js-folder/jqueryjs.js" defer></script>
+    <script src="./js-folder/form.js" defer></script>
+    <script src="./js-folder/index.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -40,12 +34,25 @@
     <div id="main-body">
       <div id="mainbodyheader">
         <h3 style="margin-left: 3cm; font-size: x-large">Employee Details</h3>
-        <div style="display: flex; gap: 10px;">
-            <button style="border-radius: 30px; width: 60px; border: none; box-shadow: 0px 1px 3px #00000029; background: #FFFFFF 0% 0% no-repeat padding-box;">
-                <img src="./Assest/magnifying-glass-solid.svg" style="width: 20px; " alt="">
-            </button>
+        <div style="display: flex; gap: 10px">
           <button
-            id="adduser" onclick="window.location.href = 'form.html';"
+            style="
+              border-radius: 30px;
+              width: 60px;
+              border: none;
+              box-shadow: 0px 1px 3px #00000029;
+              background: #ffffff 0% 0% no-repeat padding-box;
+            "
+          >
+            <img
+              src="./Assest/magnifying-glass-solid.svg"
+              style="width: 20px"
+              alt=""
+            />
+          </button>
+          <button
+            id="adduser"
+            
             style="font-weight: bolder; font-size: large; display: flex"
           >
             <span
@@ -55,23 +62,22 @@
                 align-self: center;
               "
               >+</span
-            ><span style="background-color: inherit; align-self: center"
+            ><span id="addemployee"  style="background-color: inherit; align-self: center"
               >Add User</span
             >
           </button>
         </div>
       </div>
       <div id="employeetable">
-        <table
+        <table id = "table"
           style="
             width: 80%;
             border-collapse: collapse;
             margin-left: 3cm;
             box-shadow: inset;
-            
           "
         >
-          <thead style="border-radius: 20px;">
+          <thead style="border-radius: 20px">
             <th></th>
             <th>NAME</th>
             <th>GENDER</th>
@@ -80,426 +86,8 @@
             <th>START DATE</th>
             <th>ACTION</th>
           </thead>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -1.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-              <span style="padding: 3px;">Sales</span>
-              <span style="padding: 3px;">HR</span>
-              <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-              <span id="delete" style="background-color: rgb(255, 255, 255)"
-                ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#658292"
-                width="18px"
-                height="18px"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                /></svg
-            ></span>
-              <span id="edit" style="background-color: rgb(255, 255, 255)"
-                ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#658292"
-                width="18px"
-                height="18px"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                /></svg
-            ></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -2.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -3.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span id="delete" style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span id="edit" style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -4.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -5.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-              </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -7.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-              </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -8.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-              </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse 1.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-              </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -1.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-              </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./Assest/Ellipse -2.png" />
-            </td>
-            <td>Amarpa shashanka Keerthi Kumar</td>
-            <td>Female</td>
-            <td>
-                <span style="padding: 3px;">Sales</span>
-                <span style="padding: 3px;">HR</span>
-                <span style="padding: 3px;">Finance</span>
-            </td>
-            <td>₹ 10,000</td>
-            <td>29 Oct 2019</td>
-            <td>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  /></svg
-              ></span>
-                <span style="background-color: rgb(255, 255, 255)"
-                  ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="#658292"
-                  width="18px"
-                  height="18px"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  /></svg
-              ></span>
-              </td>
-          </tr>
+          <tbody id = "tbody">
+          </tbody>
         </table>
       </div>
     </div>
